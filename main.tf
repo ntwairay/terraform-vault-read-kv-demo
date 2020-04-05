@@ -5,6 +5,7 @@ provider "vault" {
     parameters = {
       backend = "aws"
       role = "dev-role"
+      accessor= "auth_aws_43565152"
     }
     namespace = "hashicorp"
   }
