@@ -3,6 +3,12 @@ provider "vault" {
   alias     = "ns_base"
 }
 
+resource "vault_aws_auth_backend_login" "example" {
+  provider   = vault.ns_base
+  backend   = "aws"
+  role      = "dev-role"
+}
+
 data "vault_generic_secret" "dev" {
   provider    = vault.ns_base
   path        = "kv/dev"
