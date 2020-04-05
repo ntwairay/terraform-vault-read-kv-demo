@@ -1,10 +1,10 @@
 provider "vault" {
   auth_login {
-    path = "auth/aws/login"
+    path = "auth/aws/role/dev-role"
 
-    parameters = {
-      role = "dev-role"
-    }
+    # parameters = {
+    #   role = "dev-role"
+    # }
   }
   namespace = "hashicorp"
   alias     = "ns_base"
