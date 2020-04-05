@@ -1,12 +1,12 @@
 provider "vault" {
   auth_login {
-    path = "auth/aws/login"
+    path = "/auth/token/roles/dev-role"
 
-    parameters = {
-      backend = "aws"
-      role = "dev-role"
-      accessor= "auth_aws_43565152"
-    }
+    # parameters = {
+    #   backend = "aws"
+    #   role = "dev-role"
+    #   accessor= "auth_aws_43565152"
+    # }
     namespace = "hashicorp"
   }
 //  namespace = "hashicorp"
