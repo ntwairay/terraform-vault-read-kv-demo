@@ -1,6 +1,6 @@
 provider "vault" {
   auth_login {
-    path = "aws"
+    path = "auth/aws/login"
 
     parameters = {
       role = "dev-role"
