@@ -1,0 +1,5 @@
+s3_bucket="govtech-demo"
+s3_key="index.html"
+secret_path="kv/dev"
+secret_key_1="firstname"
+secret_key_2="lastname"
