@@ -1,6 +1,6 @@
 provider "vault" {
   auth_login {
-    path = "auth/aws/login"
+    path = "aws"
 
     parameters = {
       role = "dev-role"
@@ -42,3 +42,6 @@ resource "aws_s3_bucket_object" "examplebucket_object" {
   content                = data.template_file.index.rendered
   server_side_encryption = "AES256"
 }
+
+wget https://releases.hashicorp.com/vault/1.2.3/vault_1.9.5_linux_amd64.zip
+unzip vault_0.9.5_linux_amd64.zip
