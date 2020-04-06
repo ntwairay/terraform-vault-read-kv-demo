@@ -4,6 +4,7 @@ provider "vault" {
 
     parameters = {
       role = "dev-role"
+      iam_http_request_method = "POST"
     }
     namespace = "hashicorp"
   }
